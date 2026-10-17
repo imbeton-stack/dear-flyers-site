@@ -1,0 +1,192 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dear Flyers — Credits and attribution</title><style>body{font:17px/1.65 system-ui,sans-serif;max-width:800px;margin:48px auto;padding:0 24px;color:#183344;background:#f5fafb}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.5 monospace}details{margin:18px 0}a{color:#076a94}</style><main><a href="index.html">Game support</a><h1>Credits and attribution</h1><p>Dear Flyers: Passenger Rush (iOS) and Dear Passengers: Cabin Crew (Android), operated by Sergei Markhel.</p><p>Game code, procedural geometry, animation, opening sequence and deterministic music/foley were authored for this project. Menu art and item illustrations were generated with OpenAI image generation. Selected 3D models were generated through Tripo and processed for this game.</p><h2>Offline synthetic speech</h2><p>The game distributes prerecorded voice clips, not speech engines or voice models. The following source notices identify the voice authors, datasets and licenses. Voice clips were synthesized, edited and converted to WAV for short in-game cues. CC BY notices and source links are reproduced below. Model training and engine licenses do not imply that an online AI service runs in the game.</p><details><summary>Attribution.txt</summary><pre>Dear Flyers offline synthetic speech
+
+Original RU/EN: existing Windows SAPI recordings, unchanged.
+
+Piper neural voices: model cards in this folder identify their datasets and licenses. The Italian Paola dataset declares CC0: https://huggingface.co/datasets/paolapersico1/Voice-Dataset-Italian
+Piper authoring: https://github.com/OHF-Voice/piper1-gpl
+
+Kokoro-82M v1.0, hexgrad, Apache-2.0: https://huggingface.co/hexgrad/Kokoro-82M . Hindi hf_alpha; Chinese zf_xiaobei. ONNX authoring conversion: https://github.com/thewh1teagle/kokoro-onnx . Chinese script variants share a Mandarin voice.
+
+Japanese: Open JTalk / HTS Voice Mei, MMDAgent Project Team, Nagoya Institute of Technology, Department of Computer Science, copyright 2009-2013. CC-BY-3.0; see OpenJTalk-Mei.txt. Synthesized recordings are derived from this voice.
+
+Turkish, Indonesian and Korean: eSpeak NG formant synthesis, https://github.com/espeak-ng/espeak-ng . These voices are more mechanical than the neural voices.
+
+Only prerecorded WAVs are distributed in the game; no synthesis engine or model is bundled. No paid synthesis service was used. New recordings have not been certified by native listeners.
+</pre></details><details><summary>de_DE-thorsten-medium.txt</summary><pre># Model card for thorsten (medium)
+
+* Language: de_DE (German, Germany)
+* Speakers: 1
+* Quality: medium
+* Samplerate: 22,050Hz
+
+## Dataset
+
+* URL: https://github.com/thorstenMueller/Thorsten-Voice
+* License: CC0
+
+## Training
+
+Finetuned from U.S. English lessac voice (medium quality).
+</pre></details><details><summary>es_MX-ald-medium.txt</summary><pre># Model card for ald (medium)
+
+* Language: es_MX (Spanish, Mexico)
+* Speakers: 1
+* Quality: medium
+* Samplerate: 22,050Hz
+
+## Dataset
+
+* URL: https://huggingface.co/datasets/rmcpantoja/Ald_Mexican_Spanish_speech_dataset
+* License: http://unlicense.org
+
+## Training
+
+Finetuned from Spanish davefx voice (medium quality).
+</pre></details><details><summary>fr_FR-siwis-medium.txt</summary><pre># Model card for siwis (medium)
+
+* Language: fr_FR (French, France)
+* Speakers: 1
+* Quality: medium
+* Samplerate: 22,050Hz
+
+## Dataset
+
+* URL: https://datashare.is.ed.ac.uk/handle/10283/2353
+* License: CC-BY 4.0
+
+## Training
+
+Finetuned from U.S. English lessac voice (medium quality)
+</pre></details><details><summary>it_IT-paola-medium.txt</summary><pre># Model card for paola (medium)
+
+* Language: it_IT (Italian, Italy)
+* Speakers: 1
+* Quality: medium
+* Samplerate: 22,050Hz
+
+## Dataset
+
+* URL: https://huggingface.co/datasets/paolapersico1/Voice-Dataset-Italian
+* License: See URL
+
+## Training
+
+Finetuned from U.S. English lessac voice (medium quality).
+</pre></details><details><summary>nl_BE-nathalie-medium.txt</summary><pre># Model card for nathalie (medium)
+
+* Language: nl_BE (Dutch, Belgium)
+* Speakers: 1
+* Quality: medium
+* Samplerate: 22,050Hz
+
+## Dataset
+
+* URL: https://github.com/rhasspy/dataset-voice-nathalie
+* License:  CC0
+
+## Training
+
+Finetuned from U.S. English lessac voice (medium quality)
+</pre></details><details><summary>OpenJTalk-Mei.txt</summary><pre># ----------------------------------------------------------------- #
+#           HTS Voice &quot;Mei&quot;                                         #
+#           released by MMDAgent Project Team                       #
+#           http://www.mmdagent.jp/                                 #
+# ----------------------------------------------------------------- #
+#                                                                   #
+#  Copyright (c) 2009-2013  Nagoya Institute of Technology          #
+#                           Department of Computer Science          #
+#                                                                   #
+# Some rights reserved.                                             #
+#                                                                   #
+# This work is licensed under the Creative Commons Attribution 3.0  #
+# license.                                                          #
+#                                                                   #
+# You are free:                                                     #
+#  * to Share - to copy, distribute and transmit the work           #
+#  * to Remix - to adapt the work                                   #
+# Under the following conditions:                                   #
+#  * Attribution - You must attribute the work in the manner        #
+#    specified by the author or licensor (but not in any way that   #
+#    suggests that they endorse you or your use of the work).       #
+# With the understanding that:                                      #
+#  * Waiver - Any of the above conditions can be waived if you get  #
+#    permission from the copyright holder.                          #
+#  * Public Domain - Where the work or any of its elements is in    #
+#    the public domain under applicable law, that status is in no   #
+#    way affected by the license.                                   #
+#  * Other Rights - In no way are any of the following rights       #
+#    affected by the license:                                       #
+#     - Your fair dealing or fair use rights, or other applicable   #
+#       copyright exceptions and limitations;                       #
+#     - The author&#x27;s moral rights;                                  #
+#     - Rights other persons may have either in the work itself or  #
+#       in how the work is used, such as publicity or privacy       #
+#       rights.                                                     #
+#  * Notice - For any reuse or distribution, you must make clear to #
+#    others the license terms of this work. The best way to do this #
+#    is with a link to this web page.                               #
+#                                                                   #
+# See http://creativecommons.org/ for details.                      #
+# ----------------------------------------------------------------- #
+</pre></details><details><summary>pl_PL-gosia-medium.txt</summary><pre># Model card for gosia (medium)
+
+* Language: pl_PL (Polish, Poland)
+* Speakers: 1
+* Quality: medium
+* Samplerate: 22,050Hz
+
+## Dataset
+
+* URL: https://github.com/OHF-Voice/voice-datasets
+* License: CC0
+
+## Training
+
+Finetuned from U.S. English lessac voice (medium quality).
+</pre></details><details><summary>pt_BR-faber-medium.txt</summary><pre># Model card for faber (medium)
+
+* Language: pt_BR (Portuguese, Brazil)
+* Speakers: 1
+* Quality: medium
+* Samplerate: 22,050Hz
+
+## Dataset
+
+* URL: https://github.com/OHF-Voice/voice-datasets
+* License: CC0
+
+## Training
+
+Finetuned from U.S. English lessac voice (medium quality).
+</pre></details><details><summary>uk_UA-ukrainian_tts-medium.txt</summary><pre># Model card for ukrainian_tts (medium)
+
+* Language: uk_UA (Ukrainian, Ukraine)
+* Speakers: 3
+* Quality: medium
+* Samplerate: 22,050Hz
+* Phonemes: text
+
+## Dataset
+
+* URL: https://github.com/OHF-Voice/voice-datasets
+* License: CC0
+
+## Training
+
+Trained from scratch.
+</pre></details><details><summary>vi_VN-vais1000-medium.txt</summary><pre># Model card for vais1000 (medium)
+
+* Language: vi_VN (Vietnamese, Vietnam)
+* Speakers: 1
+* Quality: medium
+* Samplerate: 22,050Hz
+
+## Dataset
+
+* URL: https://ieee-dataport.org/documents/vais-1000-vietnamese-speech-synthesis-corpus
+* License: https://creativecommons.org/licenses/by/4.0/
+
+## Training
+
+Finetuned from U.S. English lessac voice (medium quality).
+</pre></details><h2>Runtime software and services</h2><p>Unity and Unity packages provide the game engine and rendering. Appodeal and its AppLovin adapter provide interstitial advertising and consent management. GameAnalytics provides gameplay analytics. Their respective software and service terms apply.</p><p>Attribution questions: <a href="mailto:Beton8@yandex.ru">Beton8@yandex.ru</a>.</p></main></html>
